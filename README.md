@@ -1,4 +1,4 @@
-# GenAI Compliance Auditor
+# Explainable Fraud Detector
 
 A fraud detection system that explains its own decisions, built to demonstrate applied ML and GenAI engineering together rather than as separate exercises.
 
