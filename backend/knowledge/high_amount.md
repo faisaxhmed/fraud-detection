@@ -1,0 +1,3 @@
+# High Transaction Amount
+
+Transactions significantly above a cardholder's typical spend are one of the strongest single predictors of fraud in our historical case data. Stolen card numbers are usually monetized quickly and in large denominations before the card is reported, so a single high-value charge — especially one with no comparable prior transaction on the account — should be weighted heavily during review. Reviewers should check whether the amount is consistent with the merchant category (a $4,000 charge at a hardware store is less suspicious than the same amount at an electronics retailer with no purchase history). When amount is the dominant contributing factor, escalate for manual confirmation rather than auto-clearing, even if other signals are weak.

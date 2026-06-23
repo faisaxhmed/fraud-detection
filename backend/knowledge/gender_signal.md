@@ -1,0 +1,3 @@
+# Gender Shows Minimal Predictive Value
+
+Internal SHAP analysis confirmed that cardholder gender contributes almost nothing to the model's fraud predictions, which is the correct and expected outcome — fraud risk is driven by spending behavior, location, and timing, not by a protected demographic attribute. Gender is retained in the feature set for completeness and auditability (so its near-zero contribution can be continuously verified rather than assumed), not because it informs scoring. If a future retraining run shows gender's attribution rising meaningfully, that is itself a red flag for the model governance review, since it would suggest the model is picking up a spurious correlation rather than a genuine fraud signal.

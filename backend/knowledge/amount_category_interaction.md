@@ -1,0 +1,3 @@
+# Amount-Category Mismatch
+
+The combination of transaction amount and merchant category is often more informative than either alone: a given dollar amount can be entirely routine in one category (e.g. $800 for furniture) and highly anomalous in another (e.g. $800 at a fast-food merchant). When amount and category jointly drive a fraud score, reviewers should ask whether the amount is plausible for that specific category rather than judging the amount in isolation. This interaction is especially useful for catching card-testing fraud, where small initial charges in low-scrutiny categories are followed by a rapid escalation to high amounts once the card is confirmed live.

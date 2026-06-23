@@ -1,0 +1,3 @@
+# Transaction Velocity and Card-Testing Behavior
+
+Although velocity (number of transactions in a short window) is not a direct model feature, it is a well-documented fraud pattern worth flagging in review notes: fraudsters frequently "test" a stolen card with one or more small, low-scrutiny purchases before attempting a large-value transaction, since a small charge is less likely to trigger an issuer's fraud alert. When a flagged high-amount transaction in this system follows shortly after other activity on the same account, reviewers should treat the high-amount charge as more suspicious than the model's single-transaction score implies, since the model evaluates each transaction independently and has no visibility into recent account-level velocity.

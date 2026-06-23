@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--surface-border);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.link {
+  color: var(--accent-from);
+  text-decoration: underline;
+  text-decoration-color: rgba(99, 91, 255, 0.35);
+}
+
+.link:hover {
+  color: var(--accent-to);
+  text-decoration-color: currentColor;
+}
+
+.separator {
+  color: var(--surface-border);
+}

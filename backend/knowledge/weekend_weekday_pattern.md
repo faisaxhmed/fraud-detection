@@ -1,0 +1,3 @@
+# Weekend vs. Weekday Spending Patterns
+
+Legitimate spending shows a distinct weekday/weekend rhythm: weekday transactions skew toward routine categories like groceries, fuel, and work-related purchases, while weekend transactions skew toward dining, entertainment, and retail. Fraudulent activity tends to break this rhythm, appearing as weekday transactions in weekend-typical categories or vice versa, because the pattern is driven by the fraudster's convenience rather than the cardholder's actual routine. This signal is weaker in isolation than amount or timing-of-day, but a day-of-week mismatch against the cardholder's established category habits is worth surfacing to a reviewer as corroborating evidence rather than a primary basis for a flag.

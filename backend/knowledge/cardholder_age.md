@@ -1,0 +1,3 @@
+# Cardholder Age as a Behavioral Signal
+
+Cardholder age shows a mild relationship with fraud susceptibility, with both very young adult accounts (which often have thinner transaction histories for the model to anchor against) and elderly cardholders (who are disproportionately targeted by social-engineering and card-skimming schemes) showing slightly elevated risk relative to middle-aged cardholders. Age should never be used to deny or delay service, and it is a weak standalone signal — its main value is in combination with a sudden behavior change, such as a long-time low-activity senior account suddenly producing a large or distant transaction. Reviewers should treat age-driven flags as a prompt to check for behavioral drift, not as a profile of the individual.

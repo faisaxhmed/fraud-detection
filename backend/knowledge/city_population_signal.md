@@ -1,0 +1,3 @@
+# City Population as a Contextual Signal
+
+City population correlates weakly with fraud risk in our data: transactions tied to smaller towns trend slightly higher risk on average than those from large metro areas, likely reflecting that smaller markets have fewer merchants for the model to have seen repeatedly during training, not that residents of small towns are inherently riskier. A post-deployment fairness check found this effect modest relative to amount but real enough to monitor over time. Reviewers should not treat a small-city cardholder as suspicious by default; this feature should only nudge a borderline case, never anchor a decision on its own, and any pattern of disproportionate flags by city size should be escalated to the model governance owner.

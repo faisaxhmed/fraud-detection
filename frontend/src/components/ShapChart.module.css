@@ -1,0 +1,139 @@
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr 100px;
+  align-items: center;
+  gap: 10px;
+}
+
+.labelCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.exhibitTag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.featureName {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.track {
+  position: relative;
+  height: 18px;
+  background: var(--bg);
+  border-radius: 4px;
+}
+
+.zeroLine {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  left: 50%;
+  width: 1px;
+  background: var(--surface-border);
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.bar.fraud {
+  background: var(--flagged);
+  left: 50%;
+}
+
+.bar.legit {
+  background: var(--cleared);
+  right: 50%;
+}
+
+.valueCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.value.fraud {
+  color: var(--flagged-ink);
+}
+
+.value.legit {
+  color: var(--cleared);
+}
+
+.strengthTag {
+  font-family: var(--font-body);
+  font-size: 9px;
+  line-height: 1.25;
+  text-align: right;
+  color: var(--text-dim);
+  white-space: normal;
+}
+
+.strengthTag.fraud {
+  color: var(--flagged-ink);
+}
+
+.strengthTag.legit {
+  color: var(--cleared);
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 4px;
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 70px 1fr 78px;
+    gap: 6px;
+  }
+
+  .featureName {
+    font-size: 10px;
+  }
+
+  .value {
+    font-size: 11px;
+  }
+
+  .strengthTag {
+    font-size: 8px;
+  }
+
+  .legend {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,53 @@
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --surface-border: #e3e1da;
+  --text: #1c1c1e;
+  --text-dim: #6b6a66;
+
+  --accent-from: #635bff;
+  --accent-to: #00d4ff;
+  --accent-gradient: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+
+  /* Verdict semantics: coral for flagged, deep ink-navy for cleared — no mint, that's its own AI default. */
+  --flagged: #ff4f40;
+  --flagged-ink: #8a1f17;
+  --cleared: #1b2a4a;
+
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-stamp: 'Special Elite', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  /* 100vh on mobile Safari/Chrome is snapshotted against the largest possible viewport
+     (toolbars collapsed), which can mismatch the visible viewport and clip the bottom of
+     scrollable content. 100dvh tracks the real, current viewport - falls back to 100vh
+     where dvh isn't supported. */
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+}

@@ -1,0 +1,25 @@
+﻿fraudTest.csv
+fraudTrain.csv
+*.csv
+
+# Backend secrets and env
+backend/.env
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# SQLite audit DB
+*.db
+*.sqlite3
+
+# Node / React
+node_modules/
+frontend/build/
+frontend/dist/
+
+# RAG vector store
+backend/chroma_db/

@@ -1,0 +1,3 @@
+# Cardholder Occupation as a Weak Contextual Signal
+
+Occupation contributes a small amount of signal, mostly by correlating with income level and travel frequency rather than by indicating trustworthiness directly — cash-heavy or travel-heavy occupations naturally produce more varied spending locations and amounts, which can otherwise look anomalous to the model. A flagged transaction where occupation is a meaningful contributor should prompt the reviewer to check whether the cardholder's job plausibly explains the unusual amount or location before escalating further. This feature should never be the primary basis for a fraud determination and exists mainly to reduce false positives for cardholders whose job legitimately produces irregular spending patterns.
